@@ -1,0 +1,50 @@
+/**
+* Declare theme variables here...
+*/
+
+$primary-red: #E72D65;
+$primary-pink: #EFA6A8;
+$primary-black: #271739;
+$primary-black-disabled: #433D4B;
+$primary-blue: #1D71B8;
+$primary-yellow: #F4DA1D;
+$primary-light-green: #CBE3C2;
+$primary-white: #fff;
+$universal-white: #fff;
+$universal-gray: #808080;
+$job-title-color: #4F4C52;
+$job-stats-color: #A3A2A2;
+$company-jobs-background: #F3F1F1;
+$faint-anchor-text-color: #0E7EBE;
+$horizontal-rule-gray: #CCCCCC;
+$userProfileBorderColor: #333;
+$textFontSize: 18px;
+
+*{
+  box-sizing: border-box;
+}
+
+%default-input {
+  border: 0;
+  border-bottom: 2px solid $primary-black;
+  border-radius: 0;
+};
+
+::-webkit-input-placeholder {
+  color: $primary-black !important;
+};
+
+:-ms-input-placeholder {
+  color: $primary-black !important;
+};
+
+%default-button {
+  background-color: gray;
+  color: black;
+  border-radius: 1px solid $primary-black;
+  cursor: pointer;
+};
+
+%disabled-default-button {
+  background-color: $primary-black-disabled;
+}

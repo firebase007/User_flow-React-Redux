@@ -1,0 +1,20 @@
+@import './components/login';
+@import './components/signup';
+
+// @import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}

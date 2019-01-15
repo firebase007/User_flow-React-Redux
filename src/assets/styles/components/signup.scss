@@ -1,0 +1,85 @@
+@import '../theme';
+
+.signup-page__intro-title {
+  color: $primary-black;
+  margin-bottom: 0;
+  margin-top: 40%;
+}
+
+.signup-page__intro-body {
+  color: $primary-black;
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 30%;
+}
+
+.logo-intelligent-elephant{
+  width: 400px;
+  height: 200px;
+  margin-left: -85px;
+  border-style: none;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  position: absolute;
+  top: 40%;
+  left: 32%;
+  text-align: center;
+
+}
+
+.signup-page__submit {
+  @extend %default-button;
+  margin-top: 30px;
+  height: 40px;
+  width: 100%;
+}
+
+.signup-page__submit:disabled {
+  @extend %disabled-default-button;
+};
+
+.signup-page__form {
+  margin-top: 5%;
+  margin-bottom: 30%;
+  
+}
+
+.login-page__cta-text2 {
+    color: blue;
+    font-weight: 600;
+    margin-bottom: -12px;
+}
+
+// this works globally
+form {
+  input[type="text"],
+  input[type="password"], {
+    @extend %default-input;
+    margin-bottom: 40px;
+  }
+}
+
+// media query for smartphones
+@media screen and (max-width: 600px){
+  .signup-page__intro-title {
+    margin-top: 20%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .signup-page__intro-body {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .signup-page__form {
+    margin-top: 0;
+  }
+}
+
+
+// .intelligent{
+//   margin-top: 160px;
+// }
